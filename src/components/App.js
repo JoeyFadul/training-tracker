@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { TrainingDayList } from './TrainingDayList';
 import { TrainingStats } from './TrainingStats';
-import { AddDayForm } from './AddDayForm';
+import { AddTrainingForm } from './AddTrainingForm';
 import { Menu } from './Menu';
 
 export class App extends Component {
@@ -51,7 +51,7 @@ export class App extends Component {
                        outdoor={this.countDays("outdoor")}
                        goal={325} /> :
         (this.props.location.pathname === '/add-training-day') ?
-          <AddDayForm onNewTrainingDay={this.addTrainingDay}/> :
+          <AddTrainingForm onNewTrainingDay={this.addTrainingDay}/> :
           <TrainingDayList trainingDays={this.state.allTrainingDays}
                            filter={this.props.params.filter}/>
       }

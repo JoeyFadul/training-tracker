@@ -15,28 +15,28 @@ const calcGoalProgress = (total, goal) => {
 }
 
 export const TrainingStats = ({total, indoor, outdoor, goal}) => (
-  	<div className="container">
-  		<div className="row pad">
-        <div className="col-lg-5 offset-lg-1 col-md-6 col-sm-12 training-stat">
+  	<div className="container" style={{marginTop: "5em"}}>
+  		<div className="row justify-content-center pad">
+        <div className="col-md-6 col-sm-12 training-stat">
           <Runner className="support-icon"/>
-          <span> Training Distance: </span>
+          <span> Total Miles: </span>
           <span>{total}</span>
         </div>
-        <div className="col-lg-5 offset-lg-1 col-md-6 col-sm-12 training-stat">
+        <div className="col-md-6 col-sm-12 training-stat">
           <Star className="support-icon"/>
           <span> Goal Progress: </span>
           <span> {calcGoalProgress(total, goal)} </span>
         </div>
   		</div>
-      <div className="row">
-    		<div className="col-lg-5 offset-lg-1 col-md-6 col-sm-12 training-stat">
+      <div className="row justify-content-center">
+    		<div className="col-md-6 col-sm-12 training-stat">
           <Home className="support-icon"/>
-          <span> Indoor Distance: </span>
+          <span> Indoor Miles: </span>
           <span>{indoor}</span>
     		</div>
-    		<div className="col-lg-5 offset-lg-1 col-md-6 col-sm-12 training-stat">
+    		<div className="col-md-6 col-sm-12 training-stat">
           <Sun className="support-icon"/>
-          <span> Outdoor Distance: </span>
+          <span> Outdoor Miles: </span>
           <span>{outdoor}</span>
     		</div>
       </div>

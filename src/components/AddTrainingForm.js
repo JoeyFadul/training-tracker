@@ -1,7 +1,7 @@
 import { PropTypes, Component } from 'react'
 import { Button } from 'reactstrap'
 
-export const AddDayForm = ({ distance,
+export const AddTrainingForm = ({ distance,
                              date,
                              runType,
                              onNewTrainingDay }) => {
@@ -22,7 +22,7 @@ export const AddDayForm = ({ distance,
   }
 
   return (
-    <form onSubmit={submit} className="add-day-form">
+    <form onSubmit={submit} className="add-training-form">
       <div className="form-group row">
         <label htmlFor="distance" className="col-2 offset-1 col-form-label">Distance (miles)</label>
         <div className="col-3">
@@ -56,12 +56,16 @@ export const AddDayForm = ({ distance,
         </select>
         </div>
       </div>
-      <Button color="success">Add Day</Button>
+      <div className="form-group row">
+        <div className="col-4 offset-2" style={{marginTop: "2em"}}>
+          <Button color="success" size="lg" block>Add Run</Button>
+        </div>
+      </div>
     </form>
   )
 }
 
-AddDayForm.propTypes = {
+AddTrainingForm.propTypes = {
 	distance: PropTypes.number,
 	date: PropTypes.string,
 	type: PropTypes.string
