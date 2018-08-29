@@ -3,25 +3,19 @@ import { TrainingDayList } from './TrainingDayList';
 import { TrainingStats } from './TrainingStats';
 import { AddTrainingForm } from './AddTrainingForm';
 import { Menu } from './Menu';
+import data from '../data';
 
 export class App extends Component {
-  constructor(props) {
-      super(props)
-      this.state = {
-        allTrainingDays: [
-          {
-            distance: 3.5,
-            date: "2018-01-02",
-            type: "indoor"
-          },
-          {
-            distance: 5,
-            date: "2018-01-04",
-            type: "outdoor"
-          }
-        ]
-      }
-      this.addTrainingDay = this.addTrainingDay.bind(this);
+  state = {
+    allTrainingDays: []
+  };
+
+  addTrainingDay = this.addTrainingDay.bind(this);
+
+  componentDidMount() {
+    this.setState({
+      allTrainingDays: data.allTrainingDays
+    });
   }
 
   addTrainingDay(trainingDay) {

@@ -19,7 +19,7 @@ module.exports = {
 				exclude: /(node_modules)/,
 				loader: ["babel-loader"],
 				query: {
-					presets: ["latest", "react", "stage-0"]
+					presets: ["latest", "react", "stage-2"]
 				}
 			},
 			{

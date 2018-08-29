@@ -24,7 +24,7 @@ export const AddTrainingForm = ({ distance,
   return (
     <form onSubmit={submit} className="add-training-form">
       <div className="form-group row">
-        <label htmlFor="distance" className="col-2 offset-1 col-form-label">Distance (miles)</label>
+        <label htmlFor="distance" className="col-2 offset-3 col-form-label">Distance (miles)</label>
         <div className="col-3">
           <input id="distance"
                  className="form-control"
@@ -36,7 +36,7 @@ export const AddTrainingForm = ({ distance,
       </div>
 
       <div className="form-group row">
-        <label htmlFor="date" className="col-2 offset-1 col-form-label">Date</label>
+        <label htmlFor="date" className="col-2 offset-3 col-form-label">Date</label>
         <div className="col-3">
           <input id="date"
                  className="form-control"
@@ -48,8 +48,8 @@ export const AddTrainingForm = ({ distance,
       </div>
 
       <div className="form-group row">
-        <label htmlFor="run-type" className="col-2 offset-1 col-form-label">Run Type</label>
-        <div className="col-4">
+        <label htmlFor="run-type" className="col-2 offset-3 col-form-label">Run Type</label>
+        <div className="col-3">
         <select className="form-control" ref={input => _runType = input}>
           <option value="indoor">indoor</option>
           <option value="outdoor">outdoor</option>
@@ -57,7 +57,7 @@ export const AddTrainingForm = ({ distance,
         </div>
       </div>
       <div className="form-group row">
-        <div className="col-4 offset-2" style={{marginTop: "2em"}}>
+        <div className="col-5 offset-3" style={{marginTop: "2em"}}>
           <Button color="success" size="lg" block>Add Run</Button>
         </div>
       </div>

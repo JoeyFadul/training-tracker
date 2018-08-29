@@ -1,0 +1,14 @@
+{
+  "allTrainingDays": [
+    {
+      "distance": 3.5,
+      "date": "2018-01-02",
+      "type": "indoor"
+    },
+    {
+      "distance": 5,
+      "date": "2018-01-04",
+      "type": "outdoor"
+    }
+  ]
+}

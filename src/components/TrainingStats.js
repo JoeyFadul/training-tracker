@@ -15,8 +15,8 @@ const calcGoalProgress = (total, goal) => {
 }
 
 export const TrainingStats = ({total, indoor, outdoor, goal}) => (
-  	<div className="container" style={{marginTop: "5em"}}>
-  		<div className="row justify-content-center pad">
+  	<div className="container justify-content-center" style={{marginTop: "5em"}}>
+  		<div className="row pad">
         <div className="col-md-6 col-sm-12 training-stat">
           <Runner className="support-icon"/>
           <span> Total Miles: </span>
@@ -28,7 +28,7 @@ export const TrainingStats = ({total, indoor, outdoor, goal}) => (
           <span> {calcGoalProgress(total, goal)} </span>
         </div>
   		</div>
-      <div className="row justify-content-center">
+      <div className="row">
     		<div className="col-md-6 col-sm-12 training-stat">
           <Home className="support-icon"/>
           <span> Indoor Miles: </span>
