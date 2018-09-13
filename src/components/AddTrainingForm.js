@@ -1,4 +1,4 @@
-import { PropTypes, Component } from 'react'
+import { PropTypes } from 'react'
 import { Button } from 'reactstrap'
 
 export const AddTrainingForm = ({ distance,

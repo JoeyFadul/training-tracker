@@ -1,15 +1,9 @@
-import Sun from 'react-icons/lib/fa/sun-o';
-import Runner from 'react-icons/lib/md/directions-run';
-import Calendar from 'react-icons/lib/fa/calendar';
 import { TrainingDayRow } from './TrainingDayRow';
-import { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { Table } from 'reactstrap';
 
 export const TrainingDayList = ({trainingDays, filter}) => {
-    const filteredDays = (!filter) ?
-    trainingDays :
-    trainingDays.filter(day => day.type == filter)
+    const filteredDays = (!filter) ? trainingDays : trainingDays.filter(day => day.type == filter)
 
     return (
       <div className="training-day-list">
